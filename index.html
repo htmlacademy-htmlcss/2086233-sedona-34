@@ -30,6 +30,7 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#"><span class="visually-hidden">Добавить в избранное</span></a>
+              <span class="added-to-favorites">12</span>
             </li>
         </ul>
       </nav>
@@ -100,6 +101,31 @@
       <span class="interest">Заинтересовались&#63;</span>
       <p class="see-available-hotels">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button class="button hotel-search-button" type="button">Поиск гостиницы в Седоне</button>
+      </section>
+      <section class="hotel-search">
+        <h2 class="hotel-search-title">Поиск гостиницы в Седоне</h2>
+        <button class="button close-hotel-search-button" type="close"><span class="visually-hidden">Закрыть форму поиска</span></button>
+        <form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="hotel-search-form-date">
+            <label class="form-label" for="arrival-date">Дата заезда&#58;</label>
+            <input type="date" id="arrival-date" name="arrival-date" placeholder="01.01.2022" value="27 апреля 2020" required> 
+            <span class="past-date-error">Мы не можем отправить вас в прошлое.</span>
+          </p>
+          <p class="hotel-search-form-date">
+            <label class="form-label" for="depature-date">Дата выезда&#58;</label>
+            <input type="date" id="depature-date" name="depature-date" placeholder="01.01.2022" value="01 сентября 2021" required> 
+            <span class="date-result">На эти даты есть свободные номера. Пока есть.</span>
+          </p>
+          <p class="adult-quantity-form">
+            <label class="form-label" for="adult-quantity" >Взрослые</label>
+            <input type="number" name="adult-quantity" value="2">
+          </p>
+          <p class="kids-quantity-form">
+            <label class="form-label" for="kids-quantity">Дети</label>
+            <input type="number" name="kids-quantity" value="1">
+          </p>
+          <button class="button hotel-search-result-button" type="submit">Найти</button>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
