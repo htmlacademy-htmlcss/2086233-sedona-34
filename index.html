@@ -104,24 +104,24 @@
       </section>
       <section class="hotel-search">
         <h2 class="hotel-search-title">Поиск гостиницы в Седоне</h2>
-        <button class="button close-hotel-search-button" type="close"><span class="visually-hidden">Закрыть форму поиска</span></button>
+        <button class="button close-hotel-search-button" type="button"><span class="visually-hidden">Закрыть форму поиска</span></button>
         <form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="hotel-search-form-date">
-            <label class="form-label" for="arrival-date">Дата заезда&#58;</label>
-            <input type="date" id="arrival-date" name="arrival-date" placeholder="01.01.2022" value="27 апреля 2020" required> 
+            <label class="arrival-date">Дата заезда&#58;</label>
+            <input type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020" required> 
             <span class="past-date-error">Мы не можем отправить вас в прошлое.</span>
           </p>
           <p class="hotel-search-form-date">
-            <label class="form-label" for="depature-date">Дата выезда&#58;</label>
-            <input type="date" id="depature-date" name="depature-date" placeholder="01.01.2022" value="01 сентября 2021" required> 
+            <label class="depature-date">Дата выезда&#58;</label>
+            <input type="text" id="depature-date" name="depature-date" value="01 сентября 2021" required> 
             <span class="date-result">На эти даты есть свободные номера. Пока есть.</span>
           </p>
           <p class="adult-quantity-form">
-            <label class="form-label" for="adult-quantity" >Взрослые</label>
+            <label class="adult-quantity" >Взрослые</label>
             <input type="number" name="adult-quantity" value="2">
           </p>
           <p class="kids-quantity-form">
-            <label class="form-label" for="kids-quantity">Дети</label>
+            <label class="kids-quantity">Дети</label>
             <input type="number" name="kids-quantity" value="1">
           </p>
           <button class="button hotel-search-result-button" type="submit">Найти</button>
@@ -133,7 +133,7 @@
         <h2 class="footer-subscribe-title">Подпишитесь на рассылку</h2>
         <p class="footer-subscribe-assurance">Только полезная информация и никакого спама, честное бойскаутское&#33;</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="subscribe-email" class="visually-hidden">Email</label>
+          <label class="subscribe-email visually-hidden">Email</label>
           <input class="field" placeholder="Ваш email" type="email" name="subscribe-email" required>
           <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
