@@ -5,6 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="#">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -43,7 +44,8 @@
         <button class="button want-hotel-search-button" type="button">Хочу сюда&#33;</button>
     </header>
     <main class="main-inner">
-        <header class="inner-header">
+        <div class="inner-header-hotel-choice">
+          <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
                 <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">
@@ -55,10 +57,10 @@
                     <img src="/images/breadcrumbs-arrow-icon.svg" alt="Главная" height="11.7" width="12">Гостиницы</a>
                 </li>
             </ul>
-        </header>
-        <section class="hotel-choice">
-        <h2 class="visually-hidden">Фильтры</h2>
-        <form class="hotel-filters" action="https://echo.htmlacademy.ru/" method="get">
+          </header>
+          <section class="hotel-choice">
+          <h2 class="visually-hidden">Фильтры</h2>
+          <form class="hotel-filters" action="https://echo.htmlacademy.ru/" method="get">
             <h3 class="hotel-filter-title">Инфраструктура&#58;</h3>
             <ul class="hotel-filter-list">
                 <li class="hotel-filter-item">
@@ -93,8 +95,9 @@
 
             <button class="button" type="submit">Применить</button>
             <button class="button reset-button" type="reset">Сбросить</button>
-        </form>
-        </section>
+          </form>
+          </section>
+        </div>
         <section class="hotel-found">
             <span class="hotel-found-number-title">Найдено гостиниц&#58; 38</span>
             <select class="select-control" aria-label="Сортировка">
