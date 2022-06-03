@@ -1,0 +1,255 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #ffffff;
+  color: #000000;
+}
+.page-header {
+  background-color: #ffffff;
+  color: #000000;
+}
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+.navigation-link-current {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid #000000;
+}
+.navigation-list {
+  list-style-type:none;
+}
+.navigation-link.search {
+  background-image: url("/images/search.svg");
+  background-repeat: no-repeat;
+}
+.navigation-link.add-to-favorites {
+  background-image: url("/images/favorite.svg");
+  background-repeat: no-repeat;
+}
+.added-to-favorites {
+  font-size: 10px;
+  line-height: 13px;
+  color:#ffffff;
+  background-color: #008000;
+  border-radius: 50%;
+}
+.slogan {
+  background-image: url("/images/index-background.jpg");
+  background-size: 100% auto;
+  background-color: inherit;
+  }
+.welcome {
+  background-image: url("/images/welcome.svg");
+}
+.to-gorgeous {
+  background-image: url("/images/to-the-gorgeous.svg");
+}
+.sedona {
+  background-image: url("/images/sedona-cause-canyon-sucks.svg");
+}
+.divider{
+  background-image: url("/images/divider-zigzag-of-index-background.svg");
+  background-size: 100% auto;
+}
+.need-to-visit {
+  background-color: inherit;
+  color: inherit;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+.arizona-town {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  background-color: inherit;
+  color: inherit;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages-list{
+  text-align: center;
+  list-style-type: none;
+}
+.advantages-item-1 {
+  background-color: #82B3D3;
+  color:#ffffff;
+}
+.advantages-item-2 {
+  background-color: #82B3D3;
+  color:#ffffff;
+}
+.advantages-item-3 {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-item-5 {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.features-list {
+  list-style-type: none;
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #000000;
+}
+.features-item-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.features-item-wrap-2 {
+  background-color: #ffffff;
+}
+
+.hotel-search {
+  text-align: center;
+}
+.interest {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.see-available-hotels {
+  font-size: 22px;
+  line-height: 26px;
+}
+.want-hotel-search-button {
+  background-color: #756157;
+  color:#ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.hotel-search-button {
+  background-color: #756157;
+  color:#ffffff;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.hotel-search-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.hotel-search-form-date {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.hotel-search-result-button {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  background-color: #82B3D3;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.past-date-error {
+  color: #FF5757;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.date-result {
+  color: #000000;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.kids-quantity-description {
+  color: #ffffff;
+  background-color: #333333;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.footer-subscribe {
+  background-color: #82B3D3;
+  color:#ffffff;
+  background-image: url("/images/blurred-sight-background.jpg");
+  background-size: 100% auto;
+  text-align: center;
+}
+.footer-subscribe-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footer-subscribe-assurance {
+  font-size: 22px;
+  line-height: 26px;
+}
+.subscribe-button {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color:#ffffff;
+  background-color: #82B3D3;
+  }
+.footer-social-list {
+  text-decoration: none;
+  list-style-type: none;
+}
+.vk {
+  background-image: url("/images/vk-icon.svg");
+  background-repeat: no-repeat;
+
+}
+.tg {
+  background-image: url("/images/tg-icon.svg");
+  background-repeat: no-repeat;
+}
+.youtube {
+  background-image: url("/images/youtube-icon.svg");
+  background-repeat: no-repeat;
+}
+.footer-contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+}
+.inner-header-hotel-choice {
+  background-image: url("images/blurred-catalog-background.jpg");
+  background-size: 100% auto;
+}
