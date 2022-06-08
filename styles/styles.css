@@ -97,6 +97,9 @@ body {
   background-color: inherit;
   color: inherit;
   }
+
+/*почему-то не отображаются все надписи, хотя экспортировала группу svg
+также хотела спросить по visually-hidden - не скрываются такие надписи в браузере*/
 .welcome {
   background-image: url("../images/welcome.svg");
   background-repeat: no-repeat;
@@ -225,9 +228,9 @@ width: 400px;
   text-transform: uppercase;
 }
 .see-available-hotels {
-  margin: auto;
+  margin: 0 auto;
   display: block;
-  width: 592px;
+  width: 500px;
 }
 .button {
   font-family: inherit;
@@ -291,6 +294,8 @@ width: 400px;
 }
 .footer-subscribe-assurance {
   font-size: 22px;
+  width: 475px;
+  margin: 0 auto;
 }
 .subscribe-button {
   line-height: 36px;
@@ -338,11 +343,14 @@ width: 400px;
 
 .inner-header-hotel-choice {
   background-image: url("../images/blurred-catalog-background.jpg");
+  width: 1200px;
+  height: 403px;
   background-repeat: no-repeat;
-  background-size: 100% auto;
   font-family: inherit;
   color: #ffffff;
   background-color: #82B3D3;
+  padding: 70px;
+  padding-top: 35px;
 }
 .inner-header-title {
   font-family: inherit;
@@ -352,7 +360,12 @@ width: 400px;
   color: #ffffff;
 }
 .breadcrumbs {
+  display: flex;
   list-style-type: none;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  width: 1060px;
 }
 .breadcrumbs-item {
   font-family: inherit;
@@ -360,10 +373,51 @@ width: 400px;
   line-height: 21px;
   font-weight: 400;
 }
+.breadcrumbs-arrow {
+  background-image: url("../images/breadcrumbs-arrow-icon.svg");
+  width: 5px;
+  height: 8px;
+}
 .icon-home {
   background-image: url("../images/breadcrumbs-house-icon.svg"), url(../images/breadcrumbs-arrow-icon.svg);
   background-size: 12px 12px, 5px 5px;
   background-repeat: no-repeat;
+}
+.hotel-filters {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 1060px;
+}
+.hotel-filter-title {
+  margin: 0;
+}
+.infrastructure-wrapper {
+  margin: 0;
+  margin-right: 70px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.accomodation-wrapper {
+  margin: 0;
+  margin-right: 175px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.cost-wrapper {
+  margin: 0;
+  margin-right: 70px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.buttons-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 .control {font-family: inherit;
   font-size: 18px;
@@ -374,7 +428,21 @@ width: 400px;
   font-size: 16px;
   line-height: 20px;
 }
+.hotel-found {
+  margin: 0 70px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.found-wrapper {
+  display: flex;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  width: 1060px;
+}
 .hotel-found-number-title {
+  margin-right: 190px;
   font-family: inherit;
   font-size: 30px;
   line-height: 36px;
@@ -382,12 +450,45 @@ width: 400px;
 }
 .select-control {
   color: #000000;
+  margin: 0;
+  margin-right: 80px;
+  padding: 0;
+}
+.view {
+  margin: 0 auto;
+  padding: 0;
+}
+.show-table {
+  background-image: url(../images/icon-table.svg);
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+}
+.show-slideshow {
+  background-image: url(../images/icon-slideshow.svg);
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+}
+.show-list {
+  background-image: url(../images/icon-list.svg);
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
 }
 .hotel-found-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  width: 1060px;
   list-style-type: none;
   text-align: left;
 }
 .hotel-card {
+  margin: 0;
+  padding: 20px;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -407,6 +508,15 @@ width: 400px;
   font-size: 18px;
   line-height: 21px;
 }
+.hotel-card-stars {
+  display: flex;
+  width: 140px;
+  list-style-type: none;
+}
+.details-wrapper {
+  display: flex;
+  width: 300px;
+}
 .add-to-favorites-button {
   background-color: #82B3D3;
 }
@@ -421,6 +531,17 @@ width: 400px;
   background-size: 18px 17px;
   background-repeat: no-repeat;
 }
+.pagination-wrapper {
+  display: flex;
+  width: 1060px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+.pagination {
+  display: flex;
+  margin: 0;
+  margin-right: 270px;
+}
 .pagination-item {
   font-family: inherit;
   font-size: 20px;
@@ -434,9 +555,12 @@ width: 400px;
   background-color: #F2F2F2;
 }
 .pagination-show-more {
+  display: flex;
+  flex-direction: row-reverse;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
+  width: 390px;
 }
 .inner-footer-subscribe-title {
   font-size: 30px;
@@ -446,7 +570,16 @@ width: 400px;
   color: #000000;
   background-color: #ffffff;
 }
+.footer-subscribe-white {
+  text-align: center;
+  padding: 0;
+  padding-top: 95px;
+  width: 1200px;
+  height: 411px;
+}
 .inner-footer-subscribe-assurance {
+  width: 475px;
+  margin: 0 auto;
   font-size: 22px;
   color: #000000;
   background-color: #ffffff;
