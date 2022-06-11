@@ -12,7 +12,8 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-html {
+html { font-family: "PT Sans", sans-serif;
+  font-style: normal;
   height: 100%;
 }
 body {
@@ -26,6 +27,9 @@ body {
   line-height: 26px;
   background-color: #ffffff;
   color: #000000;
+}
+.container {
+  margin: 0 auto;
 }
 .page-header {
   background-color: #ffffff;
