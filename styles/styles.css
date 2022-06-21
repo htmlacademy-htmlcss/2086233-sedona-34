@@ -25,7 +25,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  width: 1200px;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
@@ -35,6 +34,7 @@ body {
 
 .container {
   margin: 0 auto;
+  width: 1200px;
 }
 
 .visually-hidden {
@@ -143,6 +143,8 @@ body {
 }
 
 .main-container {
+  margin: 0 auto;
+  width: 1200px;
   flex-grow: 1;
 }
 
@@ -611,6 +613,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   padding: 0;
+  margin: 0;
 }
 
 .confirm-button {
@@ -630,11 +633,12 @@ body {
   color:#ffffff;
   background: transparent;
   text-transform: none;
-
+  padding: 0;
+  margin: 0;
 }
 
 .hotel-found {
-  margin: 50px 72px 25px;
+  margin: 50px 72px 0px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -649,6 +653,7 @@ body {
 }
 
 .hotel-found-number-title {
+  padding-top: 20px;
   margin-right: 190px;
   font-family: inherit;
   font-size: 30px;
@@ -706,26 +711,28 @@ body {
 }
 
 .hotel-found-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
   margin: 0;
   margin-bottom: 66px;
   padding: 0;
-  width: 1056px;
+  padding-top: 10px;
   list-style-type: none;
-
+  width: 1056px;
 }
 
 .hotel-card {
   display: grid;
+  width: 340px;
   row-gap: 16px;
   column-gap: 20px;
   grid-template-areas:
-    "hotel-card-link hotel-card-link"
-    "hotel-card-link hotel-card-link"
-    "hotel-card-group hotel-card-price"
-    "hotel-card-show-button add-to-favorites-button"
-    "stars-wrapper hotel-card-rating";
+    "hotel-photo hotel-photo"
+    "hotel-name hotel-name"
+    "group price"
+    "show-button add-button"
+    "stars rating";
     grid-template-columns: 140px 140px;
     grid-template-rows: 211px 28px 21px 37px 37px;
   padding: 20px;
@@ -739,18 +746,24 @@ body {
 .hotel-card-link {
   color: #000000;
   text-decoration: none;
+  grid-area: hotel-photo;
+  margin: 0;
+  padding: 0;
 }
 .hotel-card-image {
   margin-bottom: 16px;
 }
 .hotel-card-title {
+  grid-area: hotel-name;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-card-group {
+  grid-area: group;
   font-size: 18px;
   line-height: 21px;
   width: 140px;
@@ -763,11 +776,14 @@ body {
 }
 
 .stars-wrapper {
+  grid-area: stars;
   display: flex;
   width: 140px;
   margin: 0;
+  padding: 0;
 }
 .hotel-card-show-button {
+  grid-area: show-button;
   box-sizing: border-box;
   width: 140px;
   height: 37px;
@@ -778,6 +794,7 @@ body {
 }
 
 .add-to-favorites-button {
+  grid-area: add-button;
   background-color: #82B3D3;
   height: 37px;
   width: 140px;
@@ -792,8 +809,11 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
-
+.hotel-card-price {
+  grid-area: price;
+}
 .hotel-card-rating {
+  grid-area: rating;
   background-color: #F2F2F2;
   border-radius: 4px;
   border:none;
@@ -818,7 +838,6 @@ body {
   display: inline-flex;
   align-items: center;
   width: 1058px;
-
 }
 .pagination {
   list-style-type: none;
