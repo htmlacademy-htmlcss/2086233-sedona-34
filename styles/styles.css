@@ -669,7 +669,7 @@ body {
   background-color: #FFFFFF;
   position: absolute;
   top: 2px;
-  left: -1px;
+  left: 0;
   margin: 0;
 }
 .control-text {
@@ -770,7 +770,6 @@ body {
   border: 4px solid #FFFFFF;
   border-radius: 5px;
   cursor: pointer;
-  z-index: 1;
 }
 .range-toggle:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
@@ -785,14 +784,13 @@ body {
 }
 .toggle-min {
   top: -8px;
-  left: -4px;
+  left: 0;
 }
 .toggle-max {
   top: -8px;
   right: -10px;
 }
 .range-inputs {
-
   display: flex;
   margin-bottom: 40px;
 }
@@ -813,6 +811,7 @@ body {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border-right-width: 1px;
+  flex-shrink: 0;
 }
 .range-input-end {
   position: relative;
@@ -845,11 +844,13 @@ body {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border-width: 2px;
+  border-right-width: 1px;
 }
 .range-input-end:hover {
   border-color: rgba(0,0,0,0.6);
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-left-width: 1px;
   border-width: 2px;
 }
 .range-input:active {
@@ -860,12 +861,14 @@ body {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border: 2px solid #FFFFFF;
+  border-right-width: 1px;
 }
 .range-input-end:focus {
   box-shadow: 0 0 0 3px #81B3D2;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border: 2px solid #FFFFFF;
+  border-left-width: 1px;
 }
 
 .buttons-wrapper {
@@ -904,7 +907,11 @@ body {
   padding: 0;
   margin: 0;
 }
-
+.divider {
+  height: 5px;
+  background-color: #FFFFFF;
+  margin:0;
+}
 .hotel-found {
   margin: 50px 72px 0;
   padding: 0;
