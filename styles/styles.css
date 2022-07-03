@@ -101,6 +101,15 @@ body {
   text-align: center;
   white-space: nowrap;
 }
+.navigation-link:hover,
+.navigation-link:focus {
+ color: #756157;
+ border: none;
+}
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
+ border: none;
+}
 .navigation-item {
   margin: 0;
   padding: 0;
@@ -114,24 +123,16 @@ body {
 .link-search {
   box-sizing: border-box;
   padding: 24px 12px;
-  background-image: url("../images/search.svg");
-  background-size: 19px 18px;
   width: 42px;
   height: 66px;
-  background-repeat: no-repeat;
-  background-position: center;
   margin: 0;
 }
 
 .add-to-favorites {
   box-sizing: border-box;
   padding: 24px 12px;
-  background-image: url("../images/favorite.svg");
-  background-size: 19px 18px;
-  background-position: center;
   width: 42px;
   height: 66px;
-  background-repeat: no-repeat;
   margin: 0;
   margin-right: 20px;
 }
@@ -440,6 +441,7 @@ body {
   box-sizing: border-box;
   margin-right: -6px;
 }
+
 .subscribe-button {
   font-family: inherit;
   font-weight: 700;
@@ -503,7 +505,6 @@ body {
   line-height: 40px;
   color: #000000;
   text-decoration: none;
-  margin-right: 41px;
 }
 .footer-contacts-phone:hover {
   border: 1px solid #000000;
@@ -551,6 +552,8 @@ body {
 .subscribe-button:focus,
 .confirm-button:hover,
 .confirm-button:focus,
+.subscribe-button:hover,
+.subscribe-button:focus,
 .add-to-favorites-button:hover,
 .add-to-favorites-button:focus,
 .pagination-link:hover,
@@ -563,27 +566,27 @@ body {
   background-color:#6C9E42;
   border: none;
 }
-.button-view:hover,
-.button-view:active {
- border-color: #000000;
-
-
+.button-view:hover{
+  border-color: #000000;
 }
 .button-view:focus {
   border-color:#68A2CA;
-
-
 }
+.button-view:active {
+ border-color: #000000;
+}
+
 .reset-button:hover{
   background-color: transparent;
   color: rgba(0, 0, 0, 0.6);}
-.reset-button:active{
-    background-color: transparent;
-    color: rgba(0, 0, 0, 0.3);}
 .reset-button:focus {
   background-color: transparent;
   border: 3px solid #83B3D3;
   border-radius: 4px;
+}
+.reset-button:active{
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -668,7 +671,7 @@ body {
   appearance: none;
   margin: 0;
 }
-.control {
+.hotel-filter-item {
   position: relative;
 }
 .hotel-filter-item:not(:last-child) {
@@ -732,6 +735,9 @@ body {
   background-image: url("../images/icon-tick.svg");
   background-size: 12px 9px;
   background-position: center;
+  position: absolute;
+  top: 2px;
+  left: 0;
 }
 
 .infrastructure-wrapper {
@@ -741,6 +747,11 @@ body {
   display: flex;
   flex-direction: column;
   border: none;
+}
+.hotel-filter-item:focus-within {
+  background-color: transparent;
+  border-radius: 4px;
+  outline: 3px solid #83B3D3;
 }
 
 .accomodation-wrapper {
@@ -902,6 +913,7 @@ body {
   line-height: 21px;
   padding: 0;
   margin: 0;
+  position: relative;
 }
 
 .confirm-button {
@@ -912,7 +924,7 @@ body {
   width: 160px;
   height: 48px;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .reset-button {
   font-size: 16px;
@@ -923,11 +935,6 @@ body {
   text-transform: none;
   padding: 0;
   margin: 0;
-}
-.divider {
-  height: 5px;
-  background-color: #FFFFFF;
-  margin:0;
 }
 .hotel-found {
   margin: 50px 72px 0;
@@ -1149,9 +1156,12 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  flex-shrink: -1;
+
 }
 .pagination-item {
   display: inline-flex;
+  margin: 0;
 }
 .pagination-link {
   box-sizing: border-box;
@@ -1172,7 +1182,7 @@ body {
   border: none;
 }
 
-.pagination-item:not(last-child) {
+.pagination-item:not(:last-child) {
   margin-right: 8px;
 }
 .pagination-disabled {
@@ -1216,13 +1226,13 @@ body {
 
 .pagination-show:hover,
 .pagination-show:focus {
-  border: 2px solid #68A2CA;
+  outline: 2px solid #68A2CA;
 }
 .pagination-show:active {
-  border: 2px solid #3F5E72;
+  outline: 2px solid #3F5E72;
 }
 .pagination-show:disable {
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  outline: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -1259,7 +1269,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.8);
@@ -1327,19 +1337,22 @@ body {
 .depature-form:hover,
 .quantity-form:hover,
 .depature-calendar-button:hover,
-.arrival-calendar-button:hover {
+.arrival-calendar-button:hover,
+.field:hover  {
   background-color: #E6E6E6;
 }
 .depature-form:focus,
 .quantity-form:focus,
 .depature-calendar-button:focus,
-.arrival-calendar-button:focus {
+.arrival-calendar-button:focus,
+.field:focus  {
   outline: 3px solid #83B3D3;
 }
 .depature-form:active,
 .quantity-form:active,
 .depature-calendar-button:active,
-.arrival-calendar-button:active {
+.arrival-calendar-button:active,
+.field:active {
   background-color: #FFFFFF;
   outline: 2px solid #000000;
 
