@@ -1409,7 +1409,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  display: none;
+  display: flex;
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.8);
@@ -1601,8 +1601,8 @@ body {
   color: #FF5757;
   display: block;
   position: absolute;
-  top: 211px;
-  left: 225px;
+  top: 214px;
+  left: 221px;
   margin: 4px 4px;
 }
 
@@ -1610,8 +1610,8 @@ body {
   color: #000000;
   display: block;
   position: absolute;
-  top: 301px;
-  left: 225px;
+  top: 304px;
+  left: 221px;
   margin: 4px 4px;
 }
 
@@ -1697,7 +1697,7 @@ body {
   line-height: 21px;
   font-weight: 700;
   background-color: #F2F2F2;
-  padding: 15px 62px 14px 61px;
+  padding: 15px 62px 14px 62px;
   box-sizing: border-box;
   margin: 0;
   display: grid;
@@ -1715,7 +1715,7 @@ body {
   opacity: 0.3;
   position: absolute;
   left: 155px;
-  bottom: 10px;
+  bottom: 11px;
   border: none;
   cursor: pointer;
 }
@@ -1741,7 +1741,7 @@ body {
   opacity: 0.3;
   position: absolute;
   left: 438px;
-  bottom: 10px;
+  bottom: 11px;
   border: none;
   cursor: pointer;
 }
@@ -1753,7 +1753,7 @@ body {
   margin: 0;
   opacity: 0.3;
   position: absolute;
-  left: 515px;
+  left: 522px;
   bottom: 11px;
   border: none;
   cursor: pointer;
