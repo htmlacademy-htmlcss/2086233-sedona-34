@@ -295,7 +295,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 91px auto 30px;
+  margin: 92px auto 25px;
   width: 230px;
 }
 
@@ -303,7 +303,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   display: block;
-  margin: 30px auto;
+  margin: 0 auto 30px;
 }
 
 .advantage-description {
@@ -324,8 +324,8 @@ body {
 }
 
 .features-icon {
-  margin-top: 80px;
-  margin-bottom: 30px;
+  margin-top: 81px;
+  margin-bottom: 28px;
 }
 
 .features-item-description {
@@ -411,8 +411,11 @@ body {
   font-size: 20px;
   line-height: 36px;
   display: block;
-  margin: 56px auto 94px;
+  margin: 53px auto 94px;
   width: 574px;
+  box-sizing: border-box;
+  padding: 12px 15px;
+
 }
 
 .footer-subscribe {
@@ -466,6 +469,7 @@ body {
   background-color: #82B3D3;
   width: 200px;
   height: 60px;
+  border-radius: 10px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -488,14 +492,14 @@ body {
   padding: 0;
   justify-content: center;
   align-items: center;
+
 }
 
 .footer-social-item {
   box-sizing: border-box;
   width: 47px;
   height: 40px;
-  margin-top: 10px;
-  margin-right: 0;
+  margin: 0;
   padding: 0 10px;
   cursor: pointer;
 }
@@ -503,7 +507,6 @@ body {
 .footer-social-link {
   color: #83B3D3;
   background-color: transparent;
-  margin: 0;
 }
 
 .footer-social-link:hover,
@@ -516,10 +519,6 @@ body {
   color: rgba(104, 162, 202, 0.3);
 }
 
-.youtube {
-  margin-right: 300px;
-}
-
 .footer-contacts-phone {
   font-family: "PT Sans", sans-serif;
   font-size: 40px;
@@ -527,6 +526,7 @@ body {
   color: #000000;
   text-decoration: none;
   max-width: 720px;
+
 }
 
 .footer-contacts-phone:hover {
@@ -647,7 +647,7 @@ body {
 .inner-header-title {
   margin: 0;
   margin-bottom: 4px;
-  font-family: inherit;
+  font-family: "PT Sans", sans-serif;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
@@ -661,7 +661,7 @@ body {
   align-items: center;
   list-style-type: none;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   padding: 0;
 }
 
@@ -702,7 +702,7 @@ body {
 }
 
 .icon-home {
-  padding: 5px 0 5px 2px;
+  padding: 5px 0 5px 1px;
 }
 
 .hotel-filters {
@@ -759,7 +759,7 @@ body {
 }
 
 .control-text {
-  padding-left: 39px;
+  padding-left: 37px;
 }
 
 .control:hover .control-mark-infrastructure {
@@ -818,7 +818,7 @@ body {
 
 .infrastructure-wrapper {
   margin: 0;
-  margin-right: 70px;
+  margin-right: 67px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -902,13 +902,13 @@ body {
 
 .range-inputs {
   display: flex;
-  margin-bottom: 40px;
-  margin-top: 4px;
+  margin-bottom: 30px;
+  margin-top: 5px;
 }
 
 .range-input {
   box-sizing: border-box;
-  padding: 13px 19px;
+  padding: 11px 16px;
   font: inherit;
   text-align: left;
   color: #FFFFFF;
@@ -928,7 +928,7 @@ body {
   border-left-width: 2px;
   border-bottom-width: 2px;
   border-top-width: 2px;
-  width: 144px;
+  width: 142px;
 }
 
 .range-input-end {
@@ -943,20 +943,20 @@ body {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   margin-left: 2px;
-  width: 146px;
+  width: 142px;
 }
 
 .control-text-start {
   position: absolute;
-  top: 16px;
+  top: 12px;
   right: 14px;
   color: rgba(255, 255, 255, 0.4)
 }
 
 .control-text-end {
   position: absolute;
-  top: 16px;
-  right: 14px;
+  top: 12px;
+  right: 16px;
   color: rgba(255, 255, 255, 0.4)
 }
 
@@ -1033,7 +1033,7 @@ body {
   width: 160px;
   height: 48px;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .reset-button {
@@ -1050,7 +1050,7 @@ body {
 }
 
 .hotel-found {
-  margin: 50px 72px 0;
+  margin: 46px 72px 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -1059,13 +1059,13 @@ body {
 .found-wrapper {
   display: flex;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 54px;
   padding: 0;
   width: 1058px;
 }
 
 .hotel-found-number-title {
-  padding-top: 20px;
+  padding-top: 13px;
   padding-right: 20px;
   margin: 0;
   font-family: inherit;
@@ -1079,8 +1079,9 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  margin: 0 78px 0 auto;
+  margin: 4px 77px 0 auto;
   width: 290px;
+
 }
 
 .select-control {
@@ -1148,7 +1149,6 @@ body {
   margin: 0;
   margin-bottom: 66px;
   padding: 0;
-  padding-top: 10px;
   list-style-type: none;
   width: 1056px;
 
@@ -1184,7 +1184,7 @@ body {
 }
 
 .hotel-card-image {
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 }
 
 .hotel-card-title {
@@ -1196,7 +1196,8 @@ body {
   padding: 0;
 }
 
-.hotel-card-group {
+.hotel-card-group,
+.hotel-card-price {
   grid-area: group;
   font-size: 18px;
   line-height: 21px;
@@ -1234,7 +1235,7 @@ body {
 }
 
 .added-to-favorites-button {
-  background-color: green;
+  background-color: #7DB54F;
   width: 140px;
   height: 37px;
   font-size: 16px;
@@ -1305,7 +1306,7 @@ body {
   font-weight: 700;
   color: #ffffff;
   background-color: #82B3D3;
-  padding: 12px 24px;
+  padding: 11px 21px;
   border-radius: 4px;
   height: 60px;
   width: 60px;
@@ -1313,7 +1314,7 @@ body {
 }
 
 .pagination-item:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 3px;
 }
 
 .pagination-disabled {
@@ -1336,7 +1337,7 @@ body {
   line-height: 21px;
   margin-left: auto;
   position: relative;
-  margin-right: 51px;
+  margin-right: 52px;
 
 }
 
@@ -1346,7 +1347,7 @@ body {
   line-height: 21px;
   min-width: 160px;
   max-height: 49px;
-  padding: 14px 20px;
+  padding: 11px 18px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
   list-style-type: none;
@@ -1377,6 +1378,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   box-sizing: border-box;
+  margin-bottom: 28px;
   text-transform: uppercase;
   color: #000000;
   background-color: #ffffff;
@@ -1384,7 +1386,7 @@ body {
 
 .footer-subscribe-white {
   text-align: center;
-  padding: 94px 40px 0;
+  padding: 94px 40px;
   box-sizing: border-box;
   width: 1200px;
   margin: 0 auto;
@@ -1393,7 +1395,8 @@ body {
 .inner-footer-subscribe-assurance {
   width: 475px;
   margin: 0 auto;
-  margin-bottom: 45px;
+  margin-bottom: 46px;
+  padding: 0 20px 0 23px;
   font-size: 22px;
   color: #000000;
   background-color: #ffffff;
