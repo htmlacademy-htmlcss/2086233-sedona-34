@@ -677,8 +677,9 @@ body {
   position: relative;
 
 }
+
 .breadcrumbs-item::after {
-  content:"";
+  content: "";
   display: block;
   background-image: url("../images/breadcrumbs-arrow-icon.svg");
   background-repeat: no-repeat;
@@ -691,9 +692,11 @@ body {
   right: -16px;
 
 }
+
 .breadcrumbs-item:last-child::after {
   content: none;
 }
+
 .breadcrumbs-link {
   margin: 0;
   padding: 0;
@@ -830,6 +833,7 @@ body {
   border-radius: 4px;
   outline: 3px solid #83B3D3;
 }
+
 .control:focus-within .control-mark-accomodation {
   outline: 3px solid #83B3D3;
 }
@@ -967,7 +971,8 @@ body {
 }
 
 .range-input-start:hover {
-  border-color: rgba(255, 255, 255, 0.6);;
+  border-color: rgba(255, 255, 255, 0.6);
+  ;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border-width: 2px;
@@ -1363,6 +1368,7 @@ body {
   outline-offset: 0;
   border-radius: 4px;
 }
+
 .pagination-show:active {
   outline: 2px solid #3F5E72;
 }
