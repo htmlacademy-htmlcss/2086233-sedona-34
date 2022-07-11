@@ -145,17 +145,18 @@ body {
 
 .added-to-favorites {
   font-size: 10px;
+font-family: inherit;
   line-height: 13px;
   color: #ffffff;
-  background-color: #008000;
+  background-color: #7DB54F;
   border-radius: 50%;
   position: relative;
-  top: -55px;
-  left: 24px;
-  min-width: 20px;
-  min-height: 20px;
-  text-align: center;
-  padding: 3px;
+  top: -57px;
+  left: 25px;
+  min-width: 25px;
+  min-height: 25px;
+  text-align: top;
+  padding: 4px;
 }
 
 .main-container {
@@ -1219,6 +1220,7 @@ body {
   font-weight: 700;
   margin: 0;
   padding: 0;
+
 }
 
 .hotel-card-group,
