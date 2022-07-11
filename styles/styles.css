@@ -550,13 +550,7 @@ font-family: inherit;
 
 }
 
-.footer-contacts-phone:hover {
-  border: 1px solid #000000;
-  color: #756157;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #000000;
-}
-
+.footer-contacts-phone:hover,
 .footer-contacts-phone:focus {
   color: #756157;
   border: none;
@@ -726,7 +720,8 @@ font-family: inherit;
 }
 
 .icon-home {
-  padding: 5px 0 5px 1px;
+  padding: 8px;
+  margin-right: -3px;
 }
 
 .hotel-filters {
@@ -1524,6 +1519,7 @@ font-family: inherit;
 .arrival-calendar-button:focus,
 .field:focus {
   outline: 3px solid #83B3D3;
+  outline-offset: -3px;
 }
 
 .depature-form:active,
