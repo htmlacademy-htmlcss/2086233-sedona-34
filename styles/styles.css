@@ -240,10 +240,12 @@ font-family: inherit;
 
 .real-town-description {
   width: 400px;
-  min-height: 384px;
+  height: auto;
+  object-fit: cover;
   word-wrap: break-word;
   padding: 0 20px 20px 20px;
   box-sizing: border-box;
+
 }
 
 .bridge {
@@ -257,7 +259,8 @@ font-family: inherit;
 .bridge-description {
   margin: 0;
   width: 400px;
-  min-height: 384px;
+  height: auto;
+  object-fit: cover;
   word-wrap: break-word;
   padding: 0 20px 20px 20px;
   box-sizing: border-box;
